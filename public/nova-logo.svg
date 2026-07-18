@@ -1,0 +1,80 @@
+<svg width="1600" height="520" viewBox="0 0 1600 520" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="520" rx="56" fill="#02070D"/>
+
+  <!-- background glow -->
+  <ellipse cx="274" cy="260" rx="220" ry="220" fill="url(#bgGlow)" opacity="0.75"/>
+  <ellipse cx="900" cy="260" rx="520" ry="160" fill="url(#wordGlow)" opacity="0.35"/>
+
+  <!-- logo mark container -->
+  <g transform="translate(78 42)">
+    <circle cx="218" cy="218" r="194" fill="#04111E" stroke="url(#outerStroke)" stroke-width="2"/>
+    <circle cx="218" cy="218" r="164" stroke="#123B5A" stroke-width="2" opacity="0.9"/>
+    <circle cx="218" cy="218" r="122" stroke="#0B4C85" stroke-width="1.5" opacity="0.65"/>
+
+    <!-- orbital arcs -->
+    <path d="M88 123C151 55 285 44 356 118" stroke="#7DEBFF" stroke-width="8" stroke-linecap="round" opacity="0.85"/>
+    <path d="M348 318C283 386 151 393 80 320" stroke="#2A7BFF" stroke-width="8" stroke-linecap="round" opacity="0.72"/>
+    <path d="M63 254C96 328 158 379 234 389" stroke="#00D4FF" stroke-width="2" stroke-linecap="round" opacity="0.35"/>
+    <path d="M374 187C344 107 276 55 195 49" stroke="#00FF88" stroke-width="2" stroke-linecap="round" opacity="0.4"/>
+
+    <!-- NOVA diamond -->
+    <path d="M218 37C273 113 323 163 399 218C323 273 273 323 218 399C163 323 113 273 37 218C113 163 163 113 218 37Z" fill="url(#diamond)"/>
+    <path d="M218 84C257 139 297 179 352 218C297 257 257 297 218 352C179 297 139 257 84 218C139 179 179 139 218 84Z" fill="#02070D" opacity="0.9"/>
+
+    <!-- inner star -->
+    <path d="M218 119L249 190L318 218L249 246L218 317L187 246L118 218L187 190L218 119Z" fill="url(#coreStar)"/>
+    <circle cx="218" cy="218" r="33" fill="#EAFBFF"/>
+    <circle cx="218" cy="218" r="15" fill="#00D4FF"/>
+    <circle cx="218" cy="218" r="6" fill="#02070D" opacity="0.65"/>
+
+    <!-- signal nodes -->
+    <circle cx="350" cy="122" r="11" fill="#00FF88"/>
+    <circle cx="350" cy="122" r="22" stroke="#00FF88" stroke-width="2" opacity="0.25"/>
+    <circle cx="82" cy="320" r="9" fill="#00D4FF"/>
+    <circle cx="82" cy="320" r="18" stroke="#00D4FF" stroke-width="2" opacity="0.25"/>
+  </g>
+
+  <!-- wordmark -->
+  <text x="520" y="218" fill="#F4FBFF" font-family="Orbitron, Rajdhani, Eurostile, Arial, sans-serif" font-size="126" font-weight="800" letter-spacing="34">NOVA</text>
+  <text x="530" y="286" fill="#00D4FF" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="800" letter-spacing="10">NEURAL OPERATIONS &amp; VIRTUAL ASSISTANT</text>
+  <text x="532" y="344" fill="#7FA7C7" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="500" letter-spacing="6">ONE VOICE. EVERY SYSTEM.</text>
+
+  <!-- right accent line -->
+  <path d="M1350 146H1475" stroke="url(#accentLine)" stroke-width="2" stroke-linecap="round"/>
+  <path d="M1350 374H1475" stroke="url(#accentLine)" stroke-width="2" stroke-linecap="round" opacity="0.55"/>
+  <circle cx="1505" cy="146" r="6" fill="#00FF88"/>
+  <circle cx="1505" cy="374" r="6" fill="#00D4FF"/>
+
+  <defs>
+    <radialGradient id="bgGlow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(274 260) rotate(90) scale(220)">
+      <stop stop-color="#00D4FF" stop-opacity="0.42"/>
+      <stop offset="0.42" stop-color="#0B4C85" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="wordGlow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(900 260) rotate(90) scale(180 540)">
+      <stop stop-color="#2A7BFF" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="outerStroke" x1="24" y1="24" x2="412" y2="412" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7DEBFF" stop-opacity="0.8"/>
+      <stop offset="0.45" stop-color="#00D4FF" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#2A7BFF" stop-opacity="0.35"/>
+    </linearGradient>
+    <linearGradient id="diamond" x1="37" y1="37" x2="399" y2="399" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#EAFBFF"/>
+      <stop offset="0.24" stop-color="#7DEBFF"/>
+      <stop offset="0.58" stop-color="#00D4FF"/>
+      <stop offset="1" stop-color="#2A7BFF"/>
+    </linearGradient>
+    <linearGradient id="coreStar" x1="118" y1="119" x2="318" y2="317" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFFFF"/>
+      <stop offset="0.46" stop-color="#7DEBFF"/>
+      <stop offset="1" stop-color="#00D4FF"/>
+    </linearGradient>
+    <linearGradient id="accentLine" x1="1350" y1="0" x2="1475" y2="0" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#00D4FF" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#00D4FF"/>
+      <stop offset="1" stop-color="#00FF88"/>
+    </linearGradient>
+  </defs>
+</svg>

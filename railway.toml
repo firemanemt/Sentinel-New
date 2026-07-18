@@ -1,0 +1,15 @@
+# NOVA AI — Railway Configuration
+# Docs: https://docs.railway.com/reference/config
+
+[build]
+  builder = "DOCKERFILE"
+  dockerfilePath = "Dockerfile"
+
+[deploy]
+  # Run Drizzle schema sync before starting the app so Railway MySQL is always up to date.
+  # Railway needs sh -c so the chained command reliably starts the server after migrations.
+  startCommand = "sh -c 'npx drizzle-kit push --config=drizzle.config.ts && node dist/index.js'"
+  healthcheckPath = "/"
+  healthcheckTimeout = 60
+  restartPolicyType = "ON_FAILURE"
+  restartPolicyMaxRetries = 3
